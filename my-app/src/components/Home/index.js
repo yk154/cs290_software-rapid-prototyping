@@ -39,6 +39,10 @@ class Home extends React.Component {
     window.location.reload();
   }
 
+  onEdit = () => {
+    
+  }
+
   render() {
     //TODO: change this to some iteration 
     const ideas = (
@@ -46,7 +50,7 @@ class Home extends React.Component {
         <div className = "dashboard">
           {renderHTML(this.state.ideas)}
         </div>
-        <Button className = "submit" variant="danger">Edit</Button>
+        <Button className = "submit" variant="danger" onClick = {this.onEdit}>Edit</Button>
         </div>
     );
 
